@@ -1,30 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Menu</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pho Nomenal – Boise, Idaho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="logo-slot">
-            <h1>[LOGO HERE]</h1>
-        </div>
-    </header>
 
-    <main>
-        <section class="menu-category">
-            <h2>Appetizers</h2>
-            <div class="menu-item">
-                <p>Chips & Salsa <span>$5</span></p>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-ornament">
+        <span class="ornament-line"></span>
+        <span class="ornament-diamond">◆</span>
+        <span class="ornament-line"></span>
+      </div>
+      <h1 class="restaurant-name">Pho Nomenal</h1>
+      <p class="tagline">"First we eat, then we do everything else…"</p>
+      <div class="header-ornament">
+        <span class="ornament-line"></span>
+        <span class="ornament-diamond">◆</span>
+        <span class="ornament-line"></span>
+      </div>
+      <address class="contact-info">
+        <span class="contact-item">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          10548 West Fairview Avenue, Boise, Idaho 83704
+        </span>
+        <span class="contact-separator">|</span>
+        <span class="contact-item">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C9.61 21 3 14.39 3 6a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+          (208) 375-3134
+        </span>
+      </address>
+    </div>
+  </header>
+
+  <!-- ===== MENU SECTION ===== -->
+  <main class="menu-section">
+    <div class="menu-grid">
+
+      <!-- LEFT: APPETIZERS -->
+      <section class="menu-column" aria-label="Appetizers">
+        <div class="column-header">
+          <h2 class="column-title">Appetizers</h2>
+          <p class="column-subtitle">Món Khai Vị</p>
+          <div class="column-rule"></div>
+        </div>
+
+        <ul class="menu-list">
+
+          <li class="menu-item">
+            <div class="item-header">
+              <span class="item-code">A1</span>
+              <div class="item-names">
+                <h3 class="item-name-en">Crispy Egg Rolls <span class="item-qty">(3)</span></h3>
+                <p class="item-name-vn">Chả Giò Tôm Thịt</p>
+              </div>
+              <span class="item-price">$7.99</span>
             </div>
-            <div class="menu-item">
-                <p>Guacamole <span>$8</span></p>
+            <p class="item-desc">Minced pork &amp; shrimp, sweet onions, jicama, mushrooms, taro, carrot, and clear vermicelli wrapped in spring roll skin, fried to crispy. Served with lettuce, pickled carrot &amp; daikon, and vinaigrette fish sauce.</p>
+          </li>
+
+          <li class="menu-item">
+            <div class="item-header">
+              <span class="item-code">A2</span>
+              <div class="item-names">
+                <h3 class="item-name-en">Vegan Crispy Egg Rolls <span class="item-qty">(3)</span></h3>
+                <p class="item-name-vn">Chả Giò Chay</p>
+              </div>
+              <span class="item-price">$7.99</span>
             </div>
-        </section>
-        
-        <!-- Add more sections here -->
-    </main>
+            <p class="item-desc">Tofu, sweet onions, jicama, mushrooms, taro, carrot, and clear vermicelli wrapped in spring roll skin, fried to crispy. Served with lettuce, pickled carrot &amp; daikon, and vegan fish sauce.</p>
+            <span class="tag tag--vegan">Vegan</span>
+          </li>
+
+          <li class="menu-item">
+            <div class="item-header">
+              <span class="item-code">A3</span>
+              <div class="item-names">
+                <h3 class="item-name-en">Fresh Spring Rolls <span class="item-qty">(2)</span></h3>
+                <p class="item-name-vn">Gỏi Cuốn Tôm Thịt</p>
+              </div>
+              <span class="item-price">$7.99</span>
+            </div>
+            <p class="item-desc">Steamed shrimp, steamed pork, thin rice vermicelli, bean sprouts, mint, cilantro, basil, and lettuce wrapped in rice paper. Served with peanut sauce.</p>
+            <span class="tag tag--note">Only Shrimp +$1.00</span>
+          </li>
+
+          <li class="menu-item">
+            <div class="item-header">
+              <span class="item-code">A4</span>
+              <div class="item-names">
+                <h3 class="item-name-en">Vegan Fresh Spring Rolls <span class="item-qty">(2)</span></h3>
+                <p class="item-name-vn">Gỏi Cuốn Chay</p>
+              </div>
+              <span class="item-price">$7.99</span>
+            </div>
+            <p class="item-desc">Stir-fried tofu, mushroom, carrot, jicama, bean sprouts, mint, cilantro, basil, and lettuce wrapped in rice paper. Served with peanut sauce.</p>
+            <span class="tag tag--vegan">Vegan</span>
+          </li>
+
+          <li class="menu-item">
+            <div class="item-header">
+              <span class="item-code">A6</span>
+              <div class="item-names">
+                <h3 class="item-name-en">Fried Pot Stickers <span class="item-qty">(8)</span></h3>
+                <p class="item-name-vn">Sủi Cảo Chiên</p>
+              </div>
+              <span class="item-price">$7.99</span>
+            </div>
+            <p class="item-desc">Chicken and vegetables pot stickers with side pickled carrot &amp; daikon, and vinaigrette fish sauce. Served with vinaigrette soy sauce.</p>
+          </li>
+
+        </ul>
+      </section>
+
+      <!-- RIGHT: PHO BOWLS -->
+      <section class="menu-column" aria-label="Pho Bowl Noodle Soups">
+        <div class="column-header">
+          <h2 class="column-title">Phở Bowl</h2>
+          <p class="column-subtitle">Noodle Soups</p>
+          <div class="column-rule"></div>
+        </div>
+
+        <ul class="menu-list">
+
+          <li class="menu-item menu-item--featured">
+            <div class="item-header">
+              <span class="item-code">P1</span>
+              <div class="item-names">
+                <h3 class="item-name-en">Pho-Nomenal Bowl</h3>
+                <p class="item-name-vn">Phở Đặc Biệt</p>
+              </div>
+              <span class="item-price">$15.95</span>
+            </div>
+            <p class="item-desc">Pho rice noodles and beef broth soup with a rich combination of sliced steak, brisket, beef meatball, and tendon.</p>
+            <span class="tag tag--signature">House Signature</span>
+          </li>
+
+          <li class="menu-item">
+            <div class="item-header">
+              <span class="item-code">P2</span>
+              <div class="item-names">
+                <h3 class="item-name-en">Steak Pho</h3>
+                <p class="item-name-vn">Phở Tái</p>
+              </div>
+              <span class="item-price">$14.95</span>
+            </div>
+            <p class="item-desc">Pho rice noodles with sliced steak and beef broth.</p>
+          </li>
+
+          <li class="menu-item">
+            <div class="item-header">
+              <span class="item-code">P3</span>
+              <div class="item-names">
+                <h3 class="item-name-en">Create Your Own Beef Pho</h3>
+                <p class="item-name-vn">Phở Tự Chọn</p>
+              </div>
+              <span class="item-price">$14.95</span>
+            </div>
+            <p class="item-desc">Pho rice noodles with beef broth. Choose up to 2 meat toppings: Rare Steak, Brisket, Meatball, or Tendon.</p>
+          </li>
+
+          <li class="menu-item">
+            <div class="item-header">
+              <span class="item-code">P4</span>
+              <div class="item-names">
+                <h3 class="item-name-en">Northern Style Pho</h3>
+                <p class="item-name-vn">Phở Bắc</p>
+              </div>
+              <span class="item-price">$14.95</span>
+            </div>
+            <p class="item-desc">Pho rice noodles with sliced steak, ginger &amp; scallion and beef broth.</p>
+          </li>
+
+          <li class="menu-item">
+            <div class="item-header">
+              <span class="item-code">P5</span>
+              <div class="item-names">
+                <h3 class="item-name-en">Chicken Pho</h3>
+                <p class="item-name-vn">Phở Gà</p>
+              </div>
+              <span class="item-price">$14.95</span>
+            </div>
+            <p class="item-desc">Pho rice noodles with shredded chicken and chicken broth.</p>
+          </li>
+
+          <li class="menu-item">
+            <div class="item-header">
+              <span class="item-code">P6</span>
+              <div class="item-names">
+                <h3 class="item-name-en">Shrimp Pho</h3>
+                <p class="item-name-vn">Phở Tôm</p>
+              </div>
+              <span class="item-price">$15.95</span>
+            </div>
+            <p class="item-desc">Pho rice noodles with shrimp and beef broth.</p>
+          </li>
+
+          <li class="menu-item">
+            <div class="item-header">
+              <span class="item-code">P7</span>
+              <div class="item-names">
+                <h3 class="item-name-en">Vegan Pho</h3>
+                <p class="item-name-vn">Phở Chay</p>
+              </div>
+              <span class="item-price">$14.95</span>
+            </div>
+            <p class="item-desc">Pho rice noodles with steamed tofu and steamed vegetables (broccoli, cauliflower, &amp; carrot) and vegan broth.</p>
+            <span class="tag tag--vegan">Vegan</span>
+          </li>
+
+          <li class="menu-item">
+            <div class="item-header">
+              <span class="item-code">P8</span>
+              <div class="item-names">
+                <h3 class="item-name-en">Vegan Spicy Noodle Soup</h3>
+                <p class="item-name-vn">Bún Bò Huế Chay</p>
+              </div>
+              <span class="item-price">$15.95</span>
+            </div>
+            <p class="item-desc">Spicy vegetable noodle soup with steamed tofu, steamed vegetables and vegan soy meatloaf. Served with thick rice vermicelli noodles.</p>
+            <div class="tag-group">
+              <span class="tag tag--vegan">Vegan</span>
+              <span class="tag tag--spicy">Spicy</span>
+            </div>
+          </li>
+
+          <li class="menu-item">
+            <div class="item-header">
+              <span class="item-code">P9</span>
+              <div class="item-names">
+                <h3 class="item-name-en">Hue Spicy Beef Noodle Soup</h3>
+                <p class="item-name-vn">Bún Bò Huế</p>
+              </div>
+              <span class="item-price">$15.95</span>
+            </div>
+            <p class="item-desc">Spicy beef and pork noodle soup with beef shank, brisket, and Vietnamese pork meatloaf. Served with thick rice vermicelli noodles.</p>
+            <span class="tag tag--spicy">Spicy</span>
+          </li>
+
+          <li class="menu-item">
+            <div class="item-header">
+              <span class="item-code">P10</span>
+              <div class="item-names">
+                <h3 class="item-name-en">Beef Stew Rice Noodle Soup</h3>
+                <p class="item-name-vn">Hủ Tiếu Bò Kho</p>
+              </div>
+              <span class="item-price">$16.95</span>
+            </div>
+            <p class="item-desc">Vietnamese beef stew with beef chunks, lemon grass, star anise, cinnamon and carrots. Served with pho rice noodles.</p>
+          </li>
+
+          <li class="menu-item">
+            <div class="item-header">
+              <span class="item-code">P11</span>
+              <div class="item-names">
+                <h3 class="item-name-en">Beef Stew with Baguette</h3>
+                <p class="item-name-vn">Bánh Mì Bò Kho</p>
+              </div>
+              <span class="item-price">$16.95</span>
+            </div>
+            <p class="item-desc">Vietnamese beef stew with beef chunks, lemon grass, star anise, cinnamon and carrots. Served with Vietnamese baguette.</p>
+          </li>
+
+        </ul>
+      </section>
+
+    </div><!-- /.menu-grid -->
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="header-ornament">
+        <span class="ornament-line"></span>
+        <span class="ornament-diamond">◆</span>
+        <span class="ornament-line"></span>
+      </div>
+      <p class="footer-name">Pho Nomenal</p>
+      <p class="footer-address">10548 West Fairview Avenue · Boise, Idaho 83704 · (208) 375-3134</p>
+      <p class="footer-note">Menu items and prices subject to change. Please inform your server of any allergies.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
